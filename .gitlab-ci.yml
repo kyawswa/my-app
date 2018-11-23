@@ -7,8 +7,5 @@ build:
   stage: build
   script:
     - ./mvnw test
-  artifacts:
-    paths:
-      - target/my-app-1.0-SNAPSHOT.jar
   only:
-    uat
+    - uat
